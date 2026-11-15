@@ -452,5 +452,5 @@ with chat_col:
                         history.pop()   # keep the transcript consistent for a retry
 
 st.markdown("---")
-st.caption("Data: NASA GES DISC (MERRA-2, AIRS, NLDAS) via your backend. AI text is generated and may be wrong; "
+st.caption("Data: NASA GES DISC (MERRA-2, AIRS, NLDAS). AI text is generated and may be wrong; "
            "check it against the statistics shown.")
