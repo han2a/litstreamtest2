@@ -20,10 +20,11 @@ TRUSTED_AUTH_SUFFIXES = (
     ".nsidc.org",
 )
 
-# Anthropic configuration
-ANTHROPIC_URL = "https://api.anthropic.com/v1/messages"
-ANTHROPIC_VERSION = "2023-06-01"
-
+# Gemini configuration
+GEMINI_URL = (
+    "https://generativelanguage.googleapis.com/v1beta/models/"
+    "{model}:generateContent"
+)
 
 def providers():
     raw = os.environ.get("CMR_PROVIDERS", "GES_DISC")
@@ -34,10 +35,10 @@ def providers():
     ]
 
 
-def claude_model():
+def gemini_model():
     return os.environ.get(
-        "CLAUDE_MODEL",
-        "claude-sonnet-5-5"
+        "GEMINI_MODEL",
+        "gemini-2.5-flash"
     )
 
 
