@@ -8,6 +8,6 @@ urlpatterns = [
     path("api/products/add/", views.add_product, name="product-add"),
     path("api/analyze/", views.analyze, name="analyze"),
     path("api/literature/", views.literature_only, name="literature"),
-    path("api/chat/", views.chat_endpoint, name="chat"),
-    path("run/", views.run_backend, name="run_backend"), # HOW TO RUN
+    path("api/chat/", views.chat_endpoint, name="chat")
+    #path("run/", views.run_backend, name="run_backend"), # HOW TO RUN
 ]
