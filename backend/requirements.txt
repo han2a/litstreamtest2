@@ -1,0 +1,9 @@
+Django>=6.1,<6.2
+gunicorn>=23,<24
+matplotlib
+numpy
+pandas
+pydap
+requests
+scipy
+xarray
