@@ -194,7 +194,7 @@ def chat_endpoint(request):
     try:
         body = _body(request)
         text = chat.reply(body.get("messages"), body.get("context"))
-        return JsonResponse({"reply": text, "model": config.claude_model()})
+        return JsonResponse({"reply": text, "model": config.gemini_model()})
     except chat.ChatUnavailable as exc:
         return _error(str(exc), 503)
     except ValueError as exc:
